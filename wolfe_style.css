@@ -265,14 +265,14 @@ table {
         color: #5A3F2A;
         margin-bottom: 1em;
       }
-	.papers-content h2 a {
+	.papers-content a {
    		color: #5A3F2A; /* Default color */
    		text-decoration: none; /* Remove underline by default */
     	transition: color 0.3s ease; /* Smooth transition for color change */
-}
+	}
 
 /* Hover effect */
-.papers-content h2 a:hover {
+.papers-content a:hover {
     color: #c7b78b; /* Change color on hover */
     text-decoration: underline; /* Add underline on hover */
 }
