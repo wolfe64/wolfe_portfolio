@@ -238,8 +238,11 @@ table {
 /* Papers Page */
       .papers {
         background-color: #f9f9f9;
-        padding: 50px;
-	margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
       }
       .papers-content {
         display: flex;
