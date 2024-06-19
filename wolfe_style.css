@@ -238,11 +238,7 @@ table {
 /* Papers Page */
       .papers {
         background-color: #f9f9f9;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0;
-        width: 100%;
+        padding: 50px;
       }
       .papers-content {
         display: flex;
@@ -256,8 +252,21 @@ table {
         color: #5A3F2A;
         line-height: 1.5;
       }
+      .papers h1 {
+        font-size: 2.5em;
+        font-family: 'Garamond', serif;
+        color: #5A3F2A;
+        margin-bottom: 1em;
+	text-align: center 
+      }
       .papers h2 {
         font-size: 2em;
+        font-family: 'Garamond', serif;
+        color: #5A3F2A;
+        margin-bottom: 1em;
+      }
+      .papers h5 {
+        font-size: 1.4em;
         font-family: 'Garamond', serif;
         color: #5A3F2A;
         margin-bottom: 1em;
