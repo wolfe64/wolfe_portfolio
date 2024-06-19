@@ -176,9 +176,9 @@ table {
        
       }
       .category img {
- 		max-width: 300px;
-	   	max-height: 200px;
-		margin: 0 auto;
+ 	max-width: 300px;
+	max-height: 200px;
+	margin: 0 auto;
       }
       .category-title {
         font-size: 24px;
@@ -235,10 +235,6 @@ table {
         color: #5A3F2A;
         margin-bottom: 1em;
     }
-.catimg {
-    max-width: 300px;
-    max-height: 200px;
-}
 
 /* Tablet Styles 768px */
 @media screen and (min-width: 767px) {
