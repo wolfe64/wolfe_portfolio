@@ -71,13 +71,13 @@ table {
     .title {
         font-size: 2em;
         margin: 0;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         color: #c7b78b;
     }
     .description {
         font-size: 1.0em;
         margin: 0;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         color: #c7b78b;
     }
     nav {
@@ -98,7 +98,7 @@ table {
     }
     nav ul li a {
         font-size: 1.4em;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         text-transform: uppercase;
         color: #c7b78b;
         text-decoration: none;
@@ -110,7 +110,7 @@ table {
         display: none;
     }
     .hero {
-        background-image: url('hero_background.jpeg');
+        background-image: url('images/hero_background.jpeg');
         min-height: 100%;
         background-size: cover;
         background-position: top;
@@ -130,7 +130,7 @@ table {
     .hero-content p {
         font-size: 1.0em;
         margin-bottom: 1em;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         text-shadow: 1px 1px  1px #000;
         line-height: 1.6;
 		
@@ -143,7 +143,7 @@ table {
         text-decoration: none;
         border-radius: 4px;
         transition: background-color 0.3s ease;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
     }
     .btn:hover {
         background-color: #555;
@@ -185,7 +185,7 @@ table {
       .category-title {
         font-size: 24px;
         margin: 20px 0;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         color: #5A3F2A;
         text-align: left;
         margin-left: 5%;
@@ -193,7 +193,7 @@ table {
       .category-description {
         font-size: 1em;
         margin: 1.0em 1.5em 1em 1.5em;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         color: #5A3F2A;
         text-align: center;
       }
@@ -205,7 +205,7 @@ table {
         text-decoration: none;
         max-width: 40%;
         margin: 0 auto;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
       }
 /* About Styles */
       .about {
@@ -227,13 +227,13 @@ table {
       }
       .about p {
         font-size: 1em;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         color: #5A3F2A;
         line-height: 1.5;
       }
       .about h2 {
         font-size: 2em;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         color: #5A3F2A;
         margin-bottom: 1em;
     }
@@ -253,7 +253,7 @@ table {
     .hero-content p {
         font-size: 1.2em;
         margin-bottom: 1em;
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Garamond', serif;
         text-shadow: 1px 1px  1px #000;
         line-height: 1.6;
     }
@@ -310,7 +310,7 @@ table {
     }
     .about h2 {
         font-size: 2em;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Garamond', serif;
         color: #5A3F2A;
         margin-bottom: 1em;
     }
