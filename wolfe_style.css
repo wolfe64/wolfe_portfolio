@@ -235,7 +235,30 @@ table {
         color: #5A3F2A;
         margin-bottom: 1em;
     }
-
+/* Papers Page */
+      .papers {
+        background-color: #f9f9f9;
+        padding: 50px;
+	margin-top: 20px;
+      }
+      .papers-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .papers p {
+        font-size: 1.2em;
+        font-family: 'Garamond', serif;
+        color: #5A3F2A;
+        line-height: 1.5;
+      }
+      .papers h2 {
+        font-size: 2em;
+        font-family: 'Garamond', serif;
+        color: #5A3F2A;
+        margin-bottom: 1em;
+    }
 /* Tablet Styles 768px */
 @media screen and (min-width: 767px) {
     /* CSS rules for tablets and larger mobile devices */
