@@ -110,7 +110,7 @@ table {
         display: none;
     }
     .hero {
-        background-image: url('images/hero_background.jpeg');
+        background-image: url("images/hero_background.jpeg");
         min-height: 100%;
         background-size: cover;
         background-position: top;
