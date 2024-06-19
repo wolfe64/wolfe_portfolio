@@ -257,14 +257,25 @@ table {
         font-family: 'Garamond', serif;
         color: #5A3F2A;
         margin-bottom: 1em;
-	text-align: center 
+		text-align: center 
       }
       .papers h2 {
-        font-size: 2em;
-        font-family: 'Garamond', serif;
+       	 font-size: 2em;
+		font-family: 'Garamond', serif;
         color: #5A3F2A;
         margin-bottom: 1em;
       }
+	.papers-content h2 a {
+   		color: #5A3F2A; /* Default color */
+   		text-decoration: none; /* Remove underline by default */
+    	transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect */
+.papers-content h2 a:hover {
+    color: #c7b78b; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
       .papers h5 {
         font-size: 1.4em;
         font-family: 'Garamond', serif;
