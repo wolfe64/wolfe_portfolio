@@ -240,6 +240,10 @@ table {
         background-color: #f9f9f9;
         padding: 50px;
 	margin-top: 20px;
+	min-height: 100%;
+        background-size: cover;
+        background-position: top;
+        display: flex;
       }
       .papers-content {
         display: flex;
