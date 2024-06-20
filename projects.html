@@ -27,7 +27,16 @@
 
     <section class="papers">
         <h1 style="text-align: center; text-decoration: underline;">Projects</h1>
-
+                <br>
+        <h2>Illegal Wildlife Trade Dashboard</h2>
+      <object class="tableauViz" width="800" height="600" style="display:none;"></object>
+        <h5>Description</h5>
+        <p>For this example, I will be using a dashboard I created using the data visualization software Tableau. This dashboard shows my aptitude for learning new technologies and analyzing ethical issues using data-driven methodologies. The issue that this dashboard illustrates is illegal wildlife trafficking. The dashboard contains four types of visualizations: a proportional dot map, a horizontal stacked bar chart, an anomaly detection graph, and a cycle plot. All of these visualizations except for the cycle plot can be filtered on four basic taxa groups: amphibian, bird, mammal, and reptile. However, the stack bar chart is filtered with a separate box as the data comes from a different data set. The proportional dot map illustrates the total recorded number of illegally traded wildlife by country based on the four taxa groups. The data in this visualization falls within the years 2000 to 2015. The size of each dot grows in accordance with the total quantity traded while the color illustrates the taxa. The anomaly detection graph uses the same dataset. However, it focuses on how many animals were traded each year and determines if any years were unusually high or low. It highlights low-quantity anomalies in blue and high-quantity anomalies in red. The horizontal stacked bar chart illustrates the number of wildlife trades according to the biome the animal is pulled from. Finally, the cycle plot looks for patterns in illegal wildlife trade based on the quantity traded each month from 2000 to 2015.
+</p>
+        <h5>Analysis and Reflection</h5> 
+        <p>The dashboard effectively illustrates the issues surrounding illegal wildlife trafficking in an engaging and interactive way. Animation and filters allow users to immerse themselves in the issue and make changes to the data so they can make assumptions based on the visualizations. For example, the proportional dot map informs us which countries are importing the most wildlife and what types of wildlife they are most interested in. Using the filters, we can see how certain countries are more interested in certain animals than others. For example, South America seems to have a greater interest in reptiles compared to other taxa. From the stacked bar graph, we can see that warmer biomes have to deal with far more trafficking compared to colder ones across all taxa. The only visualization that could have been a bit better was the cycle plot, which is a bit difficult to read.
+</p>
+        <p>This project was particularly important to me as it illustrates my ability to learn and apply new technologies. Tableau was really fun and easy to use. I had never used Tableau before that semester. Over the course of that semester, I learned about all kinds of ways to create informative and aesthetic visualizations. By the end of the semester, I was able to take these skills and create an informative and organized dashboard that provided insight into an ethical dilemma that I deeply care about.</p>
         <br>
         <h2>Data Visualization LibGuide</h2>
         <h5>Description</h5>
@@ -35,13 +44,33 @@
         <h5>Analysis and Reflection</h5> 
         <p>This project provides a simple yet informative overview of what it takes to make high-quality data visualizations. Each section provides users with beneficial information and resources. The guide also keeps the subject matter simple enough that it hopefully would not feel too overwhelming to a beginner. If more time was permitted, I would love to go back and add some more complicated data visualization examples.
 </p>
-        <br>
+
+
     </section>
 
     <footer>
         <p>&copy; 2023. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1684082515388');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width='1024px';
+            vizElement.style.height='795px';
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width='800px';  // Adjust width as necessary
+            vizElement.style.height='600px'; // Adjust height as necessary
+        } else {
+            vizElement.style.width='100%';
+            vizElement.style.height='1527px';
+        }
+
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    
 </body>
 </html>
