@@ -29,9 +29,8 @@
         <h1 style="text-align: center; text-decoration: underline;">Projects</h1>
                 <br>
         <h2>Illegal Wildlife Trade Dashboard</h2>
-        <div id="viz1684082515388">
-            <object id="tableauViz" class="tableauViz" width="800" height="600"></object>
-        </div>
+<div class='tableauPlaceholder' id='viz1684082515388' style='position: relative'><noscript><a href='#'><img alt='Illegal Wildlife Trade ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Il&#47;IllegalWildlifeTrade&#47;IllegalWildlifeTrade&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IllegalWildlifeTrade&#47;IllegalWildlifeTrade' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Il&#47;IllegalWildlifeTrade&#47;IllegalWildlifeTrade&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+        
         <h5>Description</h5>
         <p>For this example, I will be using a dashboard I created using the data visualization software Tableau. This dashboard shows my aptitude for learning new technologies and analyzing ethical issues using data-driven methodologies. The issue that this dashboard illustrates is illegal wildlife trafficking. The dashboard contains four types of visualizations: a proportional dot map, a horizontal stacked bar chart, an anomaly detection graph, and a cycle plot. All of these visualizations except for the cycle plot can be filtered on four basic taxa groups: amphibian, bird, mammal, and reptile. However, the stack bar chart is filtered with a separate box as the data comes from a different data set. The proportional dot map illustrates the total recorded number of illegally traded wildlife by country based on the four taxa groups. The data in this visualization falls within the years 2000 to 2015. The size of each dot grows in accordance with the total quantity traded while the color illustrates the taxa. The anomaly detection graph uses the same dataset. However, it focuses on how many animals were traded each year and determines if any years were unusually high or low. It highlights low-quantity anomalies in blue and high-quantity anomalies in red. The horizontal stacked bar chart illustrates the number of wildlife trades according to the biome the animal is pulled from. Finally, the cycle plot looks for patterns in illegal wildlife trade based on the quantity traded each month from 2000 to 2015.
 </p>
@@ -54,26 +53,29 @@
         <p>&copy; 2023. All rights reserved.</p>
     </footer>
 
-    <script type='text/javascript'>
-        var divElement = document.getElementById('viz1684082515388');
-        var vizElement = divElement.querySelector('.tableauViz'); // Select the object element with class 'tableauViz'
-        
-        // Adjust width and height based on viewport size
-        if (divElement.offsetWidth > 800) {
-            vizElement.style.width = '1024px';
-            vizElement.style.height = '795px';
-        } else if (divElement.offsetWidth > 500) {
-            vizElement.style.width = '800px';  // Adjust width as necessary
-            vizElement.style.height = '600px'; // Adjust height as necessary
-        } else {
-            vizElement.style.width = '100%';
-            vizElement.style.height = '1527px';
-        }
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1684082515388');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];          
+    
+    if ( divElement.offsetWidth > 800 ) 
+    { 
+        vizElement.style.width='1024px';vizElement.style.height='795px';
+    } 
+    else if ( divElement.offsetWidth > 500 ) 
+    { 
+        vizElement.style.width='1024px';
+        vizElement.style.height='795px';
+    }
+    else 
+    { 
+        vizElement.style.width='100%';
+        vizElement.style.height='1527px';
+    }                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+</script>
 
     
 </body>
