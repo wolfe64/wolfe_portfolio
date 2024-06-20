@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patrick Wolfe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="wolfe_style.css">
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <h1 class="title"><a href="index.html">Patrick Wolfe</a></h1>
+        </div>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects">Projects</a></li> <!-- Added closing </a> tag -->
+                <li><a href="papers">Sample Papers</a></li>
+                <li><a href="#">GIS Maps</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="papers">
+        <h1 style="text-align: center; text-decoration: underline;">Projects</h1>
+
+        <br>
+        <h2>Data Visualization LibGuide</h2>
+        <h5>Description</h5>
+        <p>This work sample is a LibGuide I created on data visualization. LibGuides are a fantastic way to provide information services to not just members of a university but to anyone with access to the internet. This guide demonstrates my ability to provide information services to a wider audience and use analytical skills to assess sources and materials that fit the needs of patrons. In this LibGuide, I provide an overview of data visualization and its best practices. I wanted to aim this guide mostly at beginners. The LibGuide is divided into four major sections ignoring the introduction on the first page: Data 101, Tools, Inspiration, and Additional Resources. In the Data 101 section, I supply information on what to think about when picking a visualization method such as the different types of data, best uses of color, and color blindness. I also provide a few simple examples of common visualization as well as a link to a fantastic website where they can find more types of visualizations. The Tools section discusses the different types of software and programming languages that can be used to create data visualizations and how to pick the right one for you. The Inspiration section provides a variety of select articles and websites to inspire visitors and show them just how exciting and beautiful data can be when properly visualized. Finally, the Additional Resources section provides users with a list of select articles and books from the Thomas Cooper Library at the University of South Carolina which may be beneficial to anyone who wants to learn more about data visualization.</p>
+        <h5>Analysis and Reflection</h5> 
+        <p>This project provides a simple yet informative overview of what it takes to make high-quality data visualizations. Each section provides users with beneficial information and resources. The guide also keeps the subject matter simple enough that it hopefully would not feel too overwhelming to a beginner. If more time was permitted, I would love to go back and add some more complicated data visualization examples.
+</p>
+        <br>
+    </section>
+
+    <footer>
+        <p>&copy; 2023. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
