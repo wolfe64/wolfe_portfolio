@@ -68,6 +68,14 @@ table {
         display: flex;
         flex-direction: column;
     }
+	.branding h1 a {
+        font-family: 'Garamond', serif;
+        color: #c7b78b;
+        text-decoration: none;
+    }
+    .branding h1 a:hover {
+        text-decoration: underline;
+    }
     .title {
         font-size: 2em;
         margin: 0;
