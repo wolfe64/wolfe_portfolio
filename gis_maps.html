@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patrick Wolfe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="wolfe_style.css">
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <h1 class="title"><a href="index.html">Patrick Wolfe</a></h1>
+        </div>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="papers.html">Sample Papers</a></li>
+                <li><a href="#">GIS Maps</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="papers">
+        <h1 style="text-align: center; text-decoration: underline;">GIS Maps</h1>
+        <br>
+        <h2><a href="https://storymaps.arcgis.com/stories/e837b5292275400594e46db16b3b2271">Albuquerque Political Contributions</a></h2>
+        <div class="papers-content">
+            <h5>Description</h5>
+            <p>This is a story map I created illustrating the differences in political contributions between Democrat and Republican donors in Albuquerque during their 2017 mayoral election. The primary analysis of the map is a proportion dot map. Each dot represents the donating tendencies of different census tracts with the size of the dot being proportional in size to the total amount of money donated to the highest fundraised political party. The map goes further to explore trends in the census tracts to see if there is overall between donating tendencies and demographics such as race, age, income, and English speaking proficiency.</p>
+            <h5>Analysis and Reflection</h5>
+            <p>Overall, Republicans contribute far more in political contribution than Democrats. There appears to be a trend that Millenials tended to contribute the most to Democrats and Baby Boomers were the primary contributors to the Republicans. Not surprisingly, the districts with the highest income donated the most money. The map would suggest there is a tendency for areas with a higher Hispainic population to vote Democrat whereas predominantly White tend vote Republican. The data doesn't appear to be strong either way with regards to English speaking proficiency.</p>        </div>
+        <br>
+    <footer>
+        <p>&copy; 2023. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
