@@ -1,54 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Patrick Wolfe</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="wolfe_style.css">
+  <meta charset="UTF-8">
+  <title>Patrick Wolfe - GIS Maps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="wolfe_style.css">
 </head>
 <body>
-    <header>
-        <div class="branding">
-            <h1 class="title"><a href="index.html">Patrick Wolfe</a></h1>
-        </div>
-        <nav>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-            <ul class="menu" id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="papers.html">Sample Papers</a></li>
-                <li><a href="gis_maps.html">GIS Maps</a></li>
-            </ul>
-        </nav>
-    </header>
+ 
+  <div id="include-header"></div>
 
-    <section class="papers">
-        <h1 style="text-align: center; text-decoration: underline;">GIS Maps</h1>
-        <br>
-        <h2><a href="https://storymaps.arcgis.com/stories/e837b5292275400594e46db16b3b2271">Albuquerque Political Contributions</a></h2>
-        <div class="papers-content">
-            <h5>Description</h5>
-            <p>This is a story map I created illustrating the differences in political contributions between Democrat and Republican donors in Albuquerque during their 2017 mayoral election. The primary analysis of the map is a proportion dot map. Each dot represents the donating tendencies of different census tracts with the size of the dot being proportional in size to the total amount of money donated to the highest fundraised political party. The map goes further to explore trends in the census tracts to see if there is overall between donating tendencies and demographics such as race, age, income, and English speaking proficiency.</p>
-            <h5>Analysis and Reflection</h5>
-            <p>Overall, Republicans contribute far more in political contribution than Democrats. There appears to be a trend that Millenials tended to contribute the most to Democrats and Baby Boomers were the primary contributors to the Republicans. Not surprisingly, the districts with the highest income donated the most money. The map would suggest there is a tendency for areas with a higher Hispainic population to vote Democrat whereas predominantly White tend vote Republican. The data doesn't appear to be strong either way with regards to English speaking proficiency.</p>        </div>
-        <br>
-        <br>
-        <h2><a href="https://uscgeography.maps.arcgis.com/apps/dashboards/b5f775ab29004cc1ad469029d3183551">Map of Healthcare Organizations in Los Angles </a></h2>
-        <div class="papers-content">
-            <h5>Description</h5>
-            <p>This web map depicts the distribution and layout of health care facilities within Los Angeles. The health care organizations are broken down into four categories: Agency/Hospice, Clinics, Hospitals, and Long Term Care. </p>
-            <h5>Analysis and Reflection</h5>
-            <p>While this map was largely created as a reference tool rather than for analytics, it is certainly still possible to deduce a few things from it. Firstly, the northern half of the map has the vast majority of all healthcare facilities. It also has noticeably more Agency/Hospice centers particularly on Wilshire Blvd. The southern portion of the map has far fewer facilities and trends heavily towards having more clinics. I am curious if I were to overlap this data with additional information relating to age, income and how these categories would overlap with the data. </p>      
-        </div>
-        
-        <br>
-        
-    <footer>
-        <p>&copy; 2023. All rights reserved.</p>
-    </footer>
+  <main class="container py-5">
+    <h1 class="text-center text-decoration-underline mb-5">GIS Maps</h1>
 
-    <script src="script.js"></script>
+    <section class="mb-5">
+      <h2><a href="https://storymaps.arcgis.com/stories/e837b5292275400594e46db16b3b2271" target="_blank">Albuquerque Political Contributions</a></h2>
+      <div>
+        <h5>Description</h5>
+        <p>This is a story map I created illustrating the differences in political contributions between Democrat and Republican donors in Albuquerque during their 2017 mayoral election...</p>
+
+        <h5>Analysis and Reflection</h5>
+        <p>Overall, Republicans contribute far more in political contribution than Democrats. There appears to be a trend that Millennials tended to contribute the most to Democrats...</p>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2><a href="https://uscgeography.maps.arcgis.com/apps/dashboards/b5f775ab29004cc1ad469029d3183551" target="_blank">Map of Healthcare Organizations in Los Angeles</a></h2>
+      <div>
+        <h5>Description</h5>
+        <p>This web map depicts the distribution and layout of health care facilities within Los Angeles. The health care organizations are broken down into four categories...</p>
+
+        <h5>Analysis and Reflection</h5>
+        <p>While this map was largely created as a reference tool rather than for analytics, it is certainly still possible to deduce a few things from it...</p>
+      </div>
+    </section>
+  </main>
+
+
+  <div id="include-footer"></div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script>
+    async function loadHTML(id, file) {
+      const res = await fetch(file);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+
+    loadHTML("include-header", "header.html");
+    loadHTML("include-footer", "footer.html");
+  </script>
 </body>
 </html>

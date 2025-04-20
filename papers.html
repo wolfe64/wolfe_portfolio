@@ -1,69 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Patrick Wolfe</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="wolfe_style.css">
+  <meta charset="UTF-8">
+  <title>Patrick Wolfe - Sample Papers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="wolfe_style.css">
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="branding">
-            <h1 class="title"><a href="index.html">Patrick Wolfe</a></h1>
-        </div>
-        <nav>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-            <ul class="menu" id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="papers.html">Sample Papers</a></li>
-                <li><a href="gis_maps.html">GIS Maps</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div id="include-header"></div>
 
-    <section class="papers">
-        <h1 style="text-align: center; text-decoration: underline;">Sample Papers</h1>
-        <br>
-        <h2><a href="https://docs.google.com/document/d/1T3FLDAL4Aw1Kgty2GOjfmAG4SdbvwzVM/edit">Appalachian Botanical Collection: Metadata Cookbook</a></h2>
-        <div class="papers-content">
-            <h5>Description</h5>
-            <p>Metadata is a crucial part of information organization. It provides bibliographic structure and control for data so that it can be stored and organized in a manner that is easy for both humans and computers to understand. This work sample showcases my ability to design a system to organize information in a way that is easily preservable and retrievable. This document was created to serve as a reference guide for data entry and copy cataloging for the Appalachian Botanical Collection at the Appalachian Museum of Natural History. This collection and institution were both made up for this project. The collection consists of botanical field manuscripts, pictures, and illustrations, all based on plant life found in the Appalachian Mountains. The document contains a brief technical overview of the collection providing insight into the metadata schema, encoding scheme, and CMS framework. It also describes the data content standard, which was created specifically for this project. However, the primary purpose of the cookbook is to provide the element set for the collection. This section provides users with the necessary understanding to properly represent data within the collection. For each element in the schema, the cookbook provides information and instructions on the following attributes: required, repeatable, Dublin Core equivalent, Darwin Core equivalent, an example in XML, and general guidelines for entry.</p>
-            <h5>Analysis and Reflection</h5>
-            <p>Overall, the metadata schema is well-structured and easy to understand. I chose to use a combination of Dublin Core and Darwin Core as the collection provides both cultural and scientific value. However, one thing I would change is the identifier element. As the collection was entirely physical materials, the identifier was a barcode that was placed on the item. The idea originally was that all barcodes would also be stored in a separate database table in addition to the table that would store data for this metadata schema. Within that table, would also be the storage location of the item. While I believe this idea is interesting, I think it could be too complex for users. Designing a collection of my own helped me gain experience in determining how to properly structure data so that it is easily organized, preservable, and retrievable. This project served as a fantastic thought exercise for what it takes to create a collection. Every detail of the schema needs its own special rules for how it is handled. It forced me to slow down and make sure each part is being properly evaluated.</p>
-        </div>
-        <br>
-        <h2><a href="https://drive.google.com/file/d/15XI5Ki5rzkcvxmsNekEStwkMUYesPBn8/view?usp=sharing">Community Profile of Spartanburg Methodist College</a></h2>
+  <main class="container py-5">
+    <h1 class="text-center text-decoration-underline mb-5">Sample Papers</h1>
+
+    <section class="mb-5">
+      <h2><a href="https://docs.google.com/document/d/1T3FLDAL4Aw1Kgty2GOjfmAG4SdbvwzVM/edit" target="_blank">Appalachian Botanical Collection: Metadata Cookbook</a></h2>
+      <h5>Description</h5>
+      <p>Metadata is a crucial part of information organization. It provides bibliographic structure and control for data so that it can be stored and organized in a manner that is easy for both humans and computers to understand. This work sample showcases my ability to design a system to organize information in a way that is easily preservable and retrievable. This document was created to serve as a reference guide for data entry and copy cataloging for the Appalachian Botanical Collection at the Appalachian Museum of Natural History. This collection and institution were both made up for this project. The collection consists of botanical field manuscripts, pictures, and illustrations, all based on plant life found in the Appalachian Mountains. The document contains a brief technical overview of the collection providing insight into the metadata schema, encoding scheme, and CMS framework. It also describes the data content standard, which was created specifically for this project. However, the primary purpose of the cookbook is to provide the element set for the collection. This section provides users with the necessary understanding to properly represent data within the collection. For each element in the schema, the cookbook provides information and instructions on the following attributes: required, repeatable, Dublin Core equivalent, Darwin Core equivalent, an example in XML, and general guidelines for entry.</p>
+      <h5>Analysis and Reflection</h5>
+      <p>Overall, the metadata schema is well-structured and easy to understand. I chose to use a combination of Dublin Core and Darwin Core as the collection provides both cultural and scientific value. However, one thing I would change is the identifier element. As the collection was entirely physical materials, the identifier was a barcode that was placed on the item. The idea originally was that all barcodes would also be stored in a separate database table in addition to the table that would store data for this metadata schema. Within that table, would also be the storage location of the item. While I believe this idea is interesting, I think it could be too complex for users. Designing a collection of my own helped me gain experience in determining how to properly structure data so that it is easily organized, preservable, and retrievable. This project served as a fantastic thought exercise for what it takes to create a collection. Every detail of the schema needs its own special rules for how it is handled. It forced me to slow down and make sure each part is being properly evaluated.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2><a href="https://drive.google.com/file/d/15XI5Ki5rzkcvxmsNekEStwkMUYesPBn8/view?usp=sharing" target="_blank">Community Profile of Spartanburg Methodist College</a></h2>
         <h5>Description</h5>
         <p>To understand how librarians can best serve their communities, it is essential to understand who exactly they are serving and what groups within the community may be under-served. This project conducted a community analysis of Spartanburg Methodist College to gain an understanding of patron dynamics within the community using measurable data. It demonstrates how I have learned to use data-driven methods to make critical decisions from a leadership position within a community. This was a group project done in conjunction with four other MLIS students. It serves as an example of my ability to work effectively as a part of a team to use data-driven techniques to effectively develop strategies for reaching out to members of the community and determining what groups need attention. We gathered and examined data about both Spartanburg Methodist College and Spartanburg City and County.  Most of the data we gathered generally was standard demographics that are often looked into with any community: population/enrollment, sex, race, age, household type, religion, and income. Data was also found for more academic information such as average SAT score range, average ACT score range, students living on campus, online students, and first-generation college students. We also gathered information on different clubs and organizations which the library could work with to promote different resources and events. With all the information accumulated, we could then go on to make general observations about Spartanburg Methodist College and the Spartanburg area which could be used to develop strategies to increase resources for the groups within the community that need them the most. </p>
         <h5>Analysis and Reflection</h5> 
         <p>Using this data, we were able to effectively evaluate the community and pinpoint parts of the community that may need more help. For example, Spartanburg was found to have a high rate of poverty. Even students receiving the SC Life Scholarship may likely experience financial hardship. Therefore, the library needs to provide resources to create a more equitable college experience for economically marginalized students. Furthermore, we were able to develop strategies to work with various groups within the communities to advocate the library’s services and promote equity within the broader community. Building relationships with other groups can help strengthen community bonds and develop solutions to problems that would not be achievable on our own.</p>
         <p>This project provided a lot of insight into what it takes to understand our communities. Data-driven approaches as shown in this study help remove perceptual biases that everyone possesses and look at the bigger picture. By stepping back and looking at the numbers, we can objectively make the best decisions for promoting equity and inclusion within our communities.</p>
-        <br>
-        <h2><a href="https://drive.google.com/file/d/18i6-80wMGYngnFt0JmkA26teo8eg-9OA/view?usp=sharing">SWOT Analysis of Spartanburg County Public Library</a></h2>
-        <h5>Description</h5>
-        <p>This work sample uses SWOT analysis to determine the best methods of action for determining SMART goals for the Spartanburg County Public Library. SWOT is an acronym that stands for Strengths, Weaknesses, Opportunities, and Threats. This project was done as part of a group with four other members. This project was chosen to demonstrate my research abilities as it implements an effective research method to assess and address issues faced by a library. Furthermore, it demonstrates my aptitude to take information from analysis and apply it toward implementing a solution. The project starts with an evaluation of our findings from our research for the SWOT analysis. The data we used for conducting the SWOT analysis came from a variety of sources including library employees and the official library budget. From our SWOT analysis, we determined two SMART goals for the library. The first goal was to update outdated library printing systems by 20% over the course of one year. To implement this objective, the first three months of the plan would be dedicated to researching possible options for new equipment, software, and deployment strategies for the printers, after which the Systems department would be responsible for testing and implementing and testing all software and equipment in a test environment within the first 6 months. The second SMART goal was to implement monthly bilingual (Spanish) programming for youth. It was determined that there should be programs for youth and their caregivers as well as programs for babies and preschoolers. 
-</p>
-        <h5>Analysis and Reflection</h5> 
-        <p>The group that I worked with on this project worked incredibly well together. Each person felt like they had a voice on the team and contributed something meaningful to the analysis. It was particularly helpful that we had two current Spartanburg County Public Library employees on the team. I thought the implementation of bilingual programming was particularly exciting. When researching for the SWOT analysis, we found data that showed that Spartanburg County has a quickly rising Hispanic community. It would be fantastic if this programming could be implemented.</p>
-        <p>This project gave me the opportunity to work as a team to research an institution to determine its overall strengths and weaknesses. It gave me experience in locating and analyzing evidence that could be used to effectively evaluate the library. Furthermore, I was able to implement a tried-and-true method of analysis to come up with evidence-based ideas to improve the quality of the services provided.</p>
-        <br>
-        <h2><a href="https://drive.google.com/file/d/1nzQEpSOmBBDBTY2QnehAuR0beB_9QV4R/view?usp=sharing">Identifying Recovery Zone for Red Wolves in Western North Carolina</a></h2>
-        <h5>Description</h5>
-        <p>In my career as a library, it is my hope to promote life-long technological literacy. It is my belief that libraries can play a major role in the future of technological education. However, this may require going outside the traditional librarian framework of study. This work sample comes from a geography course I took on geographic information systems. It illustrates my willingness to explore and learn about new technologies in order that can be used to aid libraries and their patrons. This paper reports my findings from a research project where I used sustainability analysis to determine safe locations in western North Carolina where critically endangered red wolves could be introduced and reproduce. I used the Model Builder in ArcGIS to create a model which creates a weighted raster that illustrates both optimal and suboptimal locations within western North Carolina to introduce red wolves. The weighted raster is created by reclassifying and weighting together the inputs from three different layers: WNC_LandCover, WNC_Rivers, and WNC_Roads. For the WNC_Rivers and WNC_Roads, a distance accumulation function must be used to calculate the accumulated distance for each cell to different sources. Before being used as inputs, all three of these layers had to be derived from other sources by being masked and rasterized. All layers in the project are projected in NAD 1983 with a cell size of 200 meters by 200 meters. 
-</p>
-        <h5>Analysis and Reflection</h5> 
-        <p>Overall, the project was a success. The final layer clearly distinguishes optimal locations for red wolf recovery from suboptimal ones. All the layers maintained the same formats and projections at each stage of the model, ensuring that the final result was as accurate as possible. If I were able to go back and pursue this further, I would want to find a layer on coyote dispersal across North Carolina and add it as input into the model. Several sources I read suggested that coyote and red wolf hybridization is a real threat to red wolf recovery. Furthermore, as coyotes and red wolves look similar, hunters are likely to mistake them for one another. Unfortunately, I could not find any spatial data for coyotes in North Carolina for this project.</p>
-        <p>This project allowed me to explore and apply a type of technology I have wanted to learn about for quite some time. It gave me the opportunity to construct a career plan based on both my personal and professional goals in a way that I feel is unique and interesting. Long term, I hope that I will be able to learn more about geographic information systems and spatial data in the future so that one day I might be able to apply it to my career.  This is an area that I believe librarians have the potential to grow into and provide services, and I truly hope that I can be a part of it.</p>
-        <br>
     </section>
 
-    <footer>
-        <p>&copy; 2023. All rights reserved.</p>
-    </footer>
 
-    <script src="script.js"></script>
+    <section class="mb-5">
+      <h2><a href="https://drive.google.com/file/d/18i6-80wMGYngnFt0JmkA26teo8eg-9OA/view?usp=sharing" target="_blank">SWOT Analysis of Spartanburg County Public Library</a></h2>
+        <h5>Description</h5>
+        <p>This work sample uses SWOT analysis to determine the best methods of action for determining SMART goals for the Spartanburg County Public Library. SWOT is an acronym that stands for Strengths, Weaknesses, Opportunities, and Threats. This project was done as part of a group with four other members. This project was chosen to demonstrate my research abilities as it implements an effective research method to assess and address issues faced by a library. Furthermore, it demonstrates my aptitude to take information from analysis and apply it toward implementing a solution. The project starts with an evaluation of our findings from our research for the SWOT analysis. The data we used for conducting the SWOT analysis came from a variety of sources including library employees and the official library budget. From our SWOT analysis, we determined two SMART goals for the library. The first goal was to update outdated library printing systems by 20% over the course of one year. To implement this objective, the first three months of the plan would be dedicated to researching possible options for new equipment, software, and deployment strategies for the printers, after which the Systems department would be responsible for testing and implementing and testing all software and equipment in a test environment within the first 6 months. The second SMART goal was to implement monthly bilingual (Spanish) programming for youth. It was determined that there should be programs for youth and their caregivers as well as programs for babies and preschoolers.</p>
+        <h5>Analysis and Reflection</h5> 
+        <p>The group that I worked with on this project worked incredibly well together. Each person felt like they had a voice on the team and contributed something meaningful to the analysis. It was particularly helpful that we had two current Spartanburg County Public Library employees on the team. I thought the implementation of bilingual programming was particularly exciting. When researching for the SWOT analysis, we found data that showed that Spartanburg County has a quickly rising Hispanic community. It would be fantastic if this programming could be implemented.</p>
+        <p>This project gave me the opportunity to work as a team to research an institution to determine its overall strengths and weaknesses. It gave me experience in locating and analyzing evidence that could be used to effectively evaluate the library. Furthermore, I was able to implement a tried-and-true method of analysis to come up with evidence-based ideas to improve the quality of the services provided.</p>    </section>
+    </section>
+
+    <section class="mb-5">
+      <h2><a href="https://drive.google.com/file/d/1nzQEpSOmBBDBTY2QnehAuR0beB_9QV4R/view?usp=sharing" target="_blank">Identifying Recovery Zone for Red Wolves in Western North Carolina</a></h2>
+      <h5>Description</h5>
+      <p>In my career as a library, it is my hope to promote life-long technological literacy. It is my belief that libraries can play a major role in the future of technological education. However, this may require going outside the traditional librarian framework of study. This work sample comes from a geography course I took on geographic information systems. It illustrates my willingness to explore and learn about new technologies in order that can be used to aid libraries and their patrons. This paper reports my findings from a research project where I used sustainability analysis to determine safe locations in western North Carolina where critically endangered red wolves could be introduced and reproduce. I used the Model Builder in ArcGIS to create a model which creates a weighted raster that illustrates both optimal and suboptimal locations within western North Carolina to introduce red wolves. The weighted raster is created by reclassifying and weighting together the inputs from three different layers: WNC_LandCover, WNC_Rivers, and WNC_Roads. For the WNC_Rivers and WNC_Roads, a distance accumulation function must be used to calculate the accumulated distance for each cell to different sources. Before being used as inputs, all three of these layers had to be derived from other sources by being masked and rasterized. All layers in the project are projected in NAD 1983 with a cell size of 200 meters by 200 meters.</p>
+      <h5>Analysis and Reflection</h5> 
+      <p>Overall, the project was a success. The final layer clearly distinguishes optimal locations for red wolf recovery from suboptimal ones. All the layers maintained the same formats and projections at each stage of the model, ensuring that the final result was as accurate as possible. If I were able to go back and pursue this further, I would want to find a layer on coyote dispersal across North Carolina and add it as input into the model. Several sources I read suggested that coyote and red wolf hybridization is a real threat to red wolf recovery. Furthermore, as coyotes and red wolves look similar, hunters are likely to mistake them for one another. Unfortunately, I could not find any spatial data for coyotes in North Carolina for this project.</p>
+      <p>This project allowed me to explore and apply a type of technology I have wanted to learn about for quite some time. It gave me the opportunity to construct a career plan based on both my personal and professional goals in a way that I feel is unique and interesting. Long term, I hope that I will be able to learn more about geographic information systems and spatial data in the future so that one day I might be able to apply it to my career.  This is an area that I believe librarians have the potential to grow into and provide services, and I truly hope that I can be a part of it.</p>
+    </section>
+  </main>
+
+  <div id="include-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script>
+    async function loadHTML(id, file) {
+      const res = await fetch(file);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+
+    loadHTML("include-header", "header.html");
+    loadHTML("include-footer", "footer.html");
+  </script>
 </body>
 </html>
