@@ -1,412 +1,179 @@
-/* This is a comment */
+/* Wolfe Style - Bootstrap Compatible Custom CSS */
 
-
-
-/* CSS Reset optional */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  font-family: 'EB Garamond', serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #5A3F2A;
 }
 
-
-/* CSS Rules */
-/* Extra Small (XS) */
-
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 1em;
-        display: flex;
-        align-items: top;
-        justify-content: space-between;
-    }
-    .branding {
-        display: flex;
-        flex-direction: column;
-    }
-	.branding h1 a {
-        font-family: 'Garamond', serif;
-        color: #c7b78b;
-        text-decoration: none;
-    }
-    .branding h1 a:hover {
-        text-decoration: underline;
-    }
-    .title {
-        font-size: 2em;
-        margin: 0;
-        font-family: 'Garamond', serif;
-        color: #c7b78b;
-    }
-    .description {
-        font-size: 1.0em;
-        margin: 0;
-        font-family: 'Garamond', serif;
-        color: #c7b78b;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-    }
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-    nav ul li {
-        margin-left: .8em;
-    }
-    nav ul li:first-child {
-        margin-left: 0;
-    }
-    nav ul li a {
-        font-size: 1.4em;
-        font-family: 'Garamond', serif;
-        color: #c7b78b;
-        text-decoration: none;
-    }
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
-    .menu-icon {
-        display: none;
-    }
-    .hero {
-        background-image: url("images/hero_background.jpeg");
-        min-height: 100%;
-        background-size: cover;
-        background-position: top;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .hero-content {
-        max-width: 80%;
-        margin-top: 40%;
-        background-color: rgba(0, 0, 0, .6);
-        padding: 1em;
-        color: #c7b78b;
-        text-align: center;
-        margin-bottom: 2em;
-    }
-    .hero-content p {
-        font-size: 1.0em;
-        margin-bottom: 1em;
-        font-family: 'Garamond', serif;
-        text-shadow: 1px 1px  1px #000;
-        line-height: 1.6;
-		
-    }
-    .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #333;
-        color: #c7b78b;
-        text-decoration: none;
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-        font-family: 'Garamond', serif;
-    }
-    .btn:hover {
-        background-color: #555;
-    }
-    .menu-icon {
-        display: block;
-        font-size: 2em;
-        cursor: pointer;
-        color: #c7b78b;
-    }
-    .menu {
-        display: none;
-    }
-    .menu.open {
-        display: block;
-    }
-   /* Category Section */
-      .categories {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0;
-        width: 100%;
-        background-color: #8E8A7E;
-      }
-      .category {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 10px 40px 10px;
-        flex-basis: calc(90%-40px);
-       
-      }
-      .category img {
- 	max-width: 500px;
-	max-height: 300px;
-	margin: 0 auto;
-      }
-      .category-title {
-        font-size: 24px;
-        margin: 20px 0;
-        font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        text-align: left;
-        margin-left: 5%;
-      }
-      .category-description {
-        font-size: 1em;
-        margin: 1.0em 1.5em 1em 1.5em;
-        font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        text-align: center;
-      }
-      .category-link {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #B86C3A;
-        color: #fff;
-        text-decoration: none;
-        max-width: 40%;
-        margin: 0 auto;
-        font-family: 'Garamond', serif;
-      }
-/* About Styles */
-      .about {
-        background-color: #f9f9f9;
-        padding: 50px;
-      }
-      .about-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .about img {
-        width: 100%;
-        height: auto;
-        max-width: 90%;
-        margin: 0 auto 20px auto;
-
-      }
-      .about p {
-        font-size: 1em;
-        font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        line-height: 1.5;
-      }
-      .about h2 {
-        font-size: 2em;
-        font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        margin-bottom: 1em;
-    }
-/* Papers Page */
-      .papers {
-        background-color: #f9f9f9;
-        padding: 50px;
-      }
-      .papers-content {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        text-align: left;
-      }
-      .papers p {
-        font-size: 1.2em;
-        font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        line-height: 1.5;
-      }
-      .papers h1 {
-        font-size: 2.5em;
-        font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        margin-bottom: 1em;
-		text-align: center 
-      }
-      .papers h2 {
-       	 font-size: 2em;
-		font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        margin-bottom: 1em;
-      }
-	.papers-content a {
-   		color: #5A3F2A; /* Default color */
-   		text-decoration: none; /* Remove underline by default */
-    	transition: color 0.3s ease; /* Smooth transition for color change */
-	}
-
-/* Hover effect */
-.papers-content a:hover {
-    color: #c7b78b; /* Change color on hover */
-    text-decoration: underline; /* Add underline on hover */
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
 }
-      .papers h5 {
-        font-size: 1.4em;
-        font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        margin-bottom: 1em;
-    }
-/* Tablet Styles 768px */
-@media screen and (min-width: 767px) {
-    /* CSS rules for tablets and larger mobile devices */
-    .hero-content {
-        max-width: 70%;
-        margin-top: 40%;
-        background-color: rgba(0, 0, 0, .6);
-        padding: 1em;
-        color: #c7b78b;
-        text-align: center;
-        margin-bottom: 2em;
-    }
-    .hero-content p {
-        font-size: 1.2em;
-        margin-bottom: 1em;
-        font-family: 'Garamond', serif;
-        text-shadow: 1px 1px  1px #000;
-        line-height: 1.6;
-    }
-    .menu-icon {
-        display: none;
-    }
-    nav {
-        display: flex;
-        align-items: top;
-    }
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        }
-    .menu {
-        display: block;
-        display: flex;
-        flex-direction: row;
-    }
-    .categories {
-        flex-wrap: nowrap;
-    }
-    .category {
-        flex-basis: calc(33.33%-20px);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-    }
-    .about {
-        padding: 4em 0 2em 1em ;
-    }
-    .about-content {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-        margin-top: 0;
-    }
 
-    .about img {
-        width: 250px;
-        margin: 0;
-        padding: 0;
-        float: left;
-    }
-    .about p {
-        margin-top: 0;
-        margin-left: 1em;
-        margin-right: 1em;
-        margin-bottom: .5em;
-    }
-    .about h2 {
-        font-size: 2em;
-        font-family: 'Garamond', serif;
-        color: #5A3F2A;
-        margin-bottom: 1em;
-    }
+.branding h1 a {
+  color: #c7b78b;
+  text-decoration: none;
+}
+
+.branding h1 a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.navbar-nav .nav-link {
+  color: #c7b78b;
+  font-size: 1.2em;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background-image: url("images/hero_background.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #c7b78b;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content, .hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.hero-content p, .hero .container p {
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.btn-custom {
+  background-color: #333;
+  color: #c7b78b;
+  border: none;
+  font-family: 'EB Garamond', serif;
+}
+
+.btn-custom:hover {
+  background-color: #555;
+}
+
+.btn-outline-warning {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+}
+
+/* Categories */
+.categories {
+  background-color: #8E8A7E;
+  padding: 3rem 0;
+}
+
+.category-title {
+  color: #5A3F2A;
+  font-size: 1.75rem;
+  margin-top: 1rem;
+}
+
+.category-description {
+  color: #5A3F2A;
+  font-size: 1rem;
+}
+
+.category-link {
+  background-color: #B86C3A;
+  color: #fff;
+  font-family: 'EB Garamond', serif;
+}
+
+.category-link:hover {
+  background-color: #A85C2A;
+  color: #fff;
+}
+
+.category-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
   }
-/* Small Desktop Styles (1200px to 1439px) */
-@media screen and (min-width: 1200px) and (max-width: 1439px) {
-    /* CSS rules for smaller desktop screens and laptops */
-    .menu-icon {
-        display: none;
-    }
-    nav {
-        display: flex;
-        align-items: top;
-    }
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        }
-    .menu {
-        display: block;
-        display: flex;
-        flex-direction: row;
-    }
-    nav ul li a {
-        font-size: 1.3em;
-    }
-    .title {
-        font-size: 2.4em;
-    }
-    .description {
-        font-size: 1.6em;
-    }
-    .hero {
-       min-height: 800px;
-    }
-    .hero-content {
-        max-width: 55%;
-    }
-    .hero-content p {
-        font-size: 1.5em;
-    }
-    .btn {
-        font-size: 1.4em;
-    }
+
+
+/* About Section */
+.about {
+  background-color: #f9f9f9;
+  padding: 4rem 1rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.about h2 {
+  color: #5A3F2A;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.about-content img, .about img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-content p, .about p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #5A3F2A;
+}
+
+.text-brown {
+  color: #5A3F2A !important;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Responsive Tweaks */
+@media (min-width: 768px) {
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    text-align: left;
   }
+}
