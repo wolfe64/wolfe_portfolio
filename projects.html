@@ -1,136 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="wolfe_style.css">
-  <style>
-    .viz-container {
-      opacity: 0;
-      transition: opacity 1s ease-in;
-    }
-    .viz-loaded {
-      opacity: 1;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 </head>
-<body>
 
+<body>
   <div id="include-header"></div>
 
-  <main class="container py-5">
-
+  <main class="container my-5">
     <!-- Project 1 -->
     <section class="mb-5">
-      <h2 class="mb-4">Illegal Wildlife Trade Dashboard</h2>
-      
-      <div class="position-relative text-center mb-3" style="min-height:700px;">
-        <div id="spinner1" class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 bg-white">
-          <div class="spinner-border text-warning" role="status" style="width: 3rem; height: 3rem;">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </div>
-        <div id="viz1684082515388" class="viz-container mx-auto" style="min-width:300px; max-width:1000px; width:100%; height:700px;"></div>
+      <h2>Illegal Wildlife Trade Dashboard</h2>
+      <div class="mb-3">
+        <tableau-viz
+          src="https://public.tableau.com/views/IllegalWildlifeTrade/IllegalWildlifeTrade"
+          toolbar="bottom"
+          hide-tabs
+          width="100%"
+          height="800px"
+          loading="lazy">
+        </tableau-viz>
       </div>
-
       <h5>Description</h5>
-      <p>This dashboard illustrates illegal wildlife trafficking using four Tableau visualizations...</p>
+      <p>This dashboard illustrates illegal wildlife trafficking using four Tableau visualizations. Filters allow exploration by taxa groups like amphibians and mammals. Key patterns, such as country-specific preferences and biome hotspots, are visible.</p>
 
-      <h5 class="mt-4">Analysis and Reflection</h5>
-      <p>The dashboard is effective and interactive. A key takeaway is how countries vary in taxa demand...</p>
+      <h5>Analysis and Reflection</h5>
+      <p>This dashboard is effective and interactive. Filters and animation help users engage with the issue. A key takeaway is how countries vary in taxa demand. The stacked bar chart shows tropical biomes experience more trafficking.</p>
     </section>
 
     <!-- Project 2 -->
     <section class="mb-5">
-      <h2 class="mb-4">National Parks Recreational Visits: 2023</h2>
-
-      <div class="position-relative text-center mb-3" style="min-height:700px;">
-        <div id="spinner2" class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 bg-white">
-          <div class="spinner-border text-warning" role="status" style="width: 3rem; height: 3rem;">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </div>
-        <div id="viz1719808110255" class="viz-container mx-auto" style="min-width:300px; max-width:1000px; width:100%; height:700px;"></div>
+      <h2>National Parks Recreational Visits: 2023</h2>
+      <div class="mb-3">
+        <tableau-viz
+          src="https://public.tableau.com/views/5TW9PHYTS"
+          toolbar="bottom"
+          hide-tabs
+          width="100%"
+          height="800px"
+          loading="lazy">
+        </tableau-viz>
       </div>
-
       <h5>Description</h5>
-      <p>This dashboard explores and ranks National Parks based on their 2023 recreational visit numbers...</p>
+      <p>This dashboard explores and ranks National Parks based on their 2023 recreational visit numbers. It includes a proportional dot map, stacked bar chart, a region-based tree map, and a line graph showing visitation trends.</p>
 
-      <h5 class="mt-4">Analysis and Reflection</h5>
-      <p>The project was rewarding, and notable data preparation challenges were overcome...</p>
+      <h5>Analysis and Reflection</h5>
+      <p>This was an enjoyable project. One notable insight: Great Smoky Mountains National Park accounted for 14.39% of all visits, and 83% of Southeast region visits — likely due to its scenic location and proximity to tourism hubs.</p>
     </section>
 
     <!-- Project 3 -->
     <section class="mb-5">
-      <h2 class="mb-4">
+      <h2>
         <a href="https://sclis.libguides.com/c.php?g=1312531&p=9648235" class="text-decoration-none text-dark">
           Data Visualization LibGuide
         </a>
       </h2>
       <h5>Description</h5>
-      <p>This LibGuide introduces beginners to data visualization concepts...</p>
+      <p>This LibGuide introduces beginners to data visualization. It includes guidance on types of data, tools, color use, visualization inspiration, and library-curated resources.</p>
 
-      <h5 class="mt-4">Analysis and Reflection</h5>
-      <p>The guide simplifies complex topics without overwhelming beginners...</p>
+      <h5>Analysis and Reflection</h5>
+      <p>The guide provides a friendly entry point into visualization. With more time, I’d add advanced techniques and examples to support deeper learning.</p>
     </section>
-
   </main>
 
   <div id="include-footer"></div>
 
-  <!-- Tableau JS -->
-  <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-
   <script>
-    let viz1, viz2;
-  
-    function initViz() {
-      const container1 = document.getElementById("viz1684082515388");
-      const container2 = document.getElementById("viz1719808110255");
-  
-      const url1 = "https://public.tableau.com/views/IllegalWildlifeTrade/IllegalWildlifeTrade";
-      const url2 = "https://public.tableau.com/views/5TW9PHYTS";
-  
-      const options = {
-        hideTabs: true,
-        hideToolbar: false,
-        width: "100%",
-        height: "700px"
-      };
-  
-      viz1 = new tableau.Viz(container1, url1, {
-        ...options,
-        onFirstInteractive: () => {
-          document.getElementById('spinner1').style.display = "none";
-          container1.classList.add('viz-loaded');
-        }
-      });
-  
-      viz2 = new tableau.Viz(container2, url2, {
-        ...options,
-        onFirstInteractive: () => {
-          document.getElementById('spinner2').style.display = "none";
-          container2.classList.add('viz-loaded');
-        }
-      });
-    }
-  
-    document.addEventListener("DOMContentLoaded", function () {
-      initViz();
-    });
-  
     async function loadHTML(id, file) {
       const res = await fetch(file);
       const html = await res.text();
       document.getElementById(id).innerHTML = html;
     }
-  
+
     loadHTML("include-header", "header.html");
     loadHTML("include-footer", "footer.html");
   </script>
-  
-
 </body>
 </html>
