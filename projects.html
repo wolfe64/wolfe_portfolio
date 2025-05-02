@@ -85,8 +85,6 @@
 
   <script>
     let viz1, viz2;
-    let hasLoaded1 = false;
-    let hasLoaded2 = false;
   
     function initViz() {
       const container1 = document.getElementById("viz1684082515388");
@@ -95,48 +93,32 @@
       const url1 = "https://public.tableau.com/views/IllegalWildlifeTrade/IllegalWildlifeTrade";
       const url2 = "https://public.tableau.com/views/5TW9PHYTS";
   
-      const options1 = {
+      const options = {
         hideTabs: true,
         hideToolbar: false,
         width: "100%",
-        height: "700px",
-        onFirstInteractive: function () {
-          if (!hasLoaded1) {
-            document.getElementById('spinner1').style.display = "none";
-            container1.classList.add('viz-loaded');
-            hasLoaded1 = true;
-          }
-        }
+        height: "700px"
       };
   
-      const options2 = {
-        hideTabs: true,
-        hideToolbar: false,
-        width: "100%",
-        height: "700px",
-        onFirstInteractive: function () {
-          if (!hasLoaded2) {
-            document.getElementById('spinner2').style.display = "none";
-            container2.classList.add('viz-loaded');
-            hasLoaded2 = true;
-          }
+      viz1 = new tableau.Viz(container1, url1, {
+        ...options,
+        onFirstInteractive: () => {
+          document.getElementById('spinner1').style.display = "none";
+          container1.classList.add('viz-loaded');
         }
-      };
+      });
   
-      viz1 = new tableau.Viz(container1, url1, options1);
-      viz2 = new tableau.Viz(container2, url2, options2);
-    }
-  
-    function resizeViz() {
-      // Don't re-call setFrameSize if container is too small (e.g. mobile)
-      const width = Math.min(window.innerWidth * 0.95, 1000);
-      if (viz1) viz1.setFrameSize(width, 700);
-      if (viz2) viz2.setFrameSize(width, 700);
+      viz2 = new tableau.Viz(container2, url2, {
+        ...options,
+        onFirstInteractive: () => {
+          document.getElementById('spinner2').style.display = "none";
+          container2.classList.add('viz-loaded');
+        }
+      });
     }
   
     document.addEventListener("DOMContentLoaded", function () {
       initViz();
-      window.addEventListener("resize", resizeViz);
     });
   
     async function loadHTML(id, file) {
@@ -148,6 +130,7 @@
     loadHTML("include-header", "header.html");
     loadHTML("include-footer", "footer.html");
   </script>
+  
 
 </body>
 </html>

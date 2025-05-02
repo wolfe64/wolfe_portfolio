@@ -177,3 +177,15 @@ footer {
     text-align: left;
   }
 }
+/* Tableau Visualizations */
+.viz-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 700px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.viz-loaded {
+  opacity: 1;
+}
+
